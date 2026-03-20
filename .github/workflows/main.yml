@@ -49,8 +49,8 @@ jobs:
               # Pull the latest image
               docker pull ${{ env.DOCKER_IMAGE }}:prod
               
-              docker stop personal 2>/dev/null || true
-              docker rm personal  2>/dev/null || true
+              docker stop lifetimeart 2>/dev/null || true
+              docker rm lifetimeart  2>/dev/null || true
               
               port_containers=$(docker ps -q --filter "publish=3002")
               if [ -n "$port_containers" ]; then
@@ -66,7 +66,7 @@ jobs:
               docker image prune -f
               
               docker run -d \
-                --name personal \
+                --name lifetimeart \
                 --restart unless-stopped \
                 -p 127.0.0.1:3002:3002 \
                 ${{ env.DOCKER_IMAGE }}:prod
