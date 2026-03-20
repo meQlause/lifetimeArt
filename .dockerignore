@@ -1,0 +1,35 @@
+# dependencies
+**/node_modules
+.bundle
+db/*.sqlite3
+db/*.sqlite3-journal
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*.local
+
+# vercel
+/.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# docker
+Dockerfile
+.dockerignore
+
+# bun
+bun.lockb
