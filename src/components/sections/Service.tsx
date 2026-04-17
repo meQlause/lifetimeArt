@@ -65,6 +65,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
                         fill
                         className="object-cover"
                         priority
+                        unoptimized
                         sizes="(max-width: 768px) 100vw, 640px"
                     />
                 </motion.div>

@@ -77,6 +77,7 @@ const FeaturedProjectSection: React.FC<FeaturedProjectProps> = ({ eyebrow, headi
                                         height={1000}
                                         className="w-full h-full object-cover"
                                         priority
+                                        unoptimized
                                     />
                                 </div>
 
@@ -139,9 +140,10 @@ const FeaturedProjectSection: React.FC<FeaturedProjectProps> = ({ eyebrow, headi
                                                         <Image
                                                             src={item.testimonial.avatar}
                                                             alt={item.testimonial.author}
-                                                            fill
+                                                            width={50}
+                                                            height={50}
                                                             className="object-cover"
-                                                            sizes="28px"
+                                                            unoptimized
                                                         />
                                                     </div>
                                                 )}
@@ -185,9 +187,10 @@ const FeaturedProjectSection: React.FC<FeaturedProjectProps> = ({ eyebrow, headi
                                                 <Image
                                                     src={item.testimonial.avatar}
                                                     alt={item.testimonial.author}
-                                                    fill
+                                                    width={50}
+                                                    height={50}
                                                     className="object-cover"
-                                                    sizes="28px"
+                                                    unoptimized
                                                 />
                                             </div>
                                         )}

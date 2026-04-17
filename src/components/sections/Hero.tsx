@@ -19,6 +19,7 @@ const Hero = () => {
                             width={1000}
                             className="h-full w-full object-cover"
                             priority
+                            unoptimized
                         />
                         <div className="absolute inset-0 bg-[#101014CC]/80" />
                     </div>
@@ -102,6 +103,7 @@ const Hero = () => {
                                     fill
                                     className="object-cover"
                                     priority
+                                    unoptimized
                                 />
                             </div>
                         </div>

@@ -51,6 +51,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                             width={20}
                             height={20}
                             priority
+                            unoptimized
                             className="object-contain" 
                         />
                     </span>
@@ -110,6 +111,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                                     alt={`${brand} logo`} 
                                     width={20}
                                     height={20}
+                                    unoptimized
                                     className="object-contain"
                                 />
                             </span>

@@ -24,7 +24,14 @@ const TestimonialSection: React.FC<TestimonialsProps> = (
             </div>
             <div className="flex items-center gap-3">
                 <div className="relative size-[40px] rounded-full overflow-hidden bg-neutral-200">
-                    <Image src={t.avatar} alt={t.author} fill className="object-cover" sizes="40px" />
+                    <Image 
+                        src={t.avatar} 
+                        alt={t.author} 
+                        width={40} 
+                        height={40} 
+                        className="object-cover" 
+                        unoptimized
+                    />
                 </div>
                 <span className="text-[14px] text-neutral-800 font-medium">{t.author}</span>
             </div>

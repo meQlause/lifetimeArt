@@ -61,7 +61,7 @@ export const Carousel: React.FC<CarouselProps> = ({ className, images }) => {
                                 className="shrink-0 h-[400px] w-[320px] xxl:h-[500] xxl:w-[400] lg2:max-w-[400px]"
                             >
                                 <div className="relative aspect-[4/5] overflow-hidden bg-neutral-100">
-                                    <Image src={img.src} alt={img.alt} fill className="object-cover" />
+                                    <Image src={img.src} alt={img.alt} fill className="object-cover" unoptimized />
                                 </div>
                             </motion.div>
                         ))}
@@ -124,7 +124,14 @@ export const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
                             <div className="flex items-center gap-[14px]">
                                 {t.avatar && (
                                     <div className="relative size-[50px] rounded-full overflow-hidden bg-neutral-200">
-                                        <Image src={t.avatar} alt={t.author} fill className="object-cover" sizes="50px" />
+                                        <Image 
+                                            src={t.avatar} 
+                                            alt={t.author} 
+                                            width={50} 
+                                            height={50} 
+                                            className="object-cover" 
+                                            unoptimized 
+                                        />
                                     </div>
                                 )}
                                 <span className="text-[14px] text-neutral-800 font-medium">{t.author}</span>
@@ -194,6 +201,7 @@ export const FeaturedCarousel: React.FC<FeaturedCarouselProps> = ({
                                             className="object-cover"
                                             sizes="(max-width: 768px) 100vw, 640px"
                                             priority
+                                            unoptimized
                                         />
                                     </div>
                                 </div>
@@ -302,9 +310,10 @@ export const FeaturedCarousel: React.FC<FeaturedCarouselProps> = ({
                                                     <Image
                                                         src={item.testimonial.avatar}
                                                         alt={item.testimonial.author}
-                                                        fill
+                                                        width={50}
+                                                        height={50}
                                                         className="object-cover"
-                                                        sizes="28px"
+                                                        unoptimized
                                                     />
                                                 </div>
                                             )}

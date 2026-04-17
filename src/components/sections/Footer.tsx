@@ -16,6 +16,7 @@ const Footer = () => {
                                 alt="LifetimeArt logo"
                                 width={20}
                                 height={20}
+                                unoptimized
                                 className="object-contain"
                             />
                         </div>
