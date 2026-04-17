@@ -44,8 +44,15 @@ export const Navbar: React.FC<NavbarProps> = ({
         >
             <div className={`max-w-[1450px] mx-auto lg2:px-[40px] py-3 px-4 rounded-lg h-full lg2:py-[20px] flex items-center justify-between w-full xxl:px-[80px] ${isHeader ? "backdrop-blur-md" : "rounded-lg xxl:backdrop-blur-none backdrop-blur-md"}`}>
                 <Link href="/" className="flex items-center gap-2">
-                    <span className="relative size-[32px]">
-                        <Image src={logo} alt={`${brand} logo`} fill sizes="20px" />
+                    <span className="relative size-[32px] flex items-center justify-center">
+                        <Image 
+                            src={logo} 
+                            alt={`${brand} logo`} 
+                            width={20}
+                            height={20}
+                            priority
+                            className="object-contain" 
+                        />
                     </span>
                     <span className="text-white text-[24px] font-medium">{brand}</span>
                 </Link>
@@ -97,8 +104,14 @@ export const Navbar: React.FC<NavbarProps> = ({
                             className="flex items-center gap-2"
                             onClick={() => setOpen(false)}
                         >
-                            <span className="relative size-[32px]">
-                                <Image src={logo} alt={`${brand} logo`} fill sizes="20px" />
+                            <span className="relative size-[32px] flex items-center justify-center">
+                                <Image 
+                                    src={logo} 
+                                    alt={`${brand} logo`} 
+                                    width={20}
+                                    height={20}
+                                    className="object-contain"
+                                />
                             </span>
                             <span className="text-white text-[23px] font-medium">{brand}</span>
                         </Link>

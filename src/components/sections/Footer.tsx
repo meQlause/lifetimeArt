@@ -10,11 +10,12 @@ const Footer = () => {
                 <div className="flex flex-col lg2:flex-row lg2:mt-[20px] lg2:items-start lg2:justify-between">
 
                     <div className="flex items-center gap-2 mb-[40px]">
-                        <div className="relative size-[32px]">
+                        <div className="relative size-[32px] flex items-center justify-center">
                             <Image
                                 src="/Logo.png"
                                 alt="LifetimeArt logo"
-                                fill
+                                width={20}
+                                height={20}
                                 className="object-contain"
                             />
                         </div>
